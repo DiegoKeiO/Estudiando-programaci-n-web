@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+}
+
+main{
+    margin: auto;
+}
+
+.numeros{
+    margin: auto;
+    width: 100%;
+}
+
+table{
+    width: 50%;
+    margin: auto;
+}
+
+button{
+    margin: auto;
+    width: 100%;
+}
+
+.operaciones{
+    padding: 100%;
+}

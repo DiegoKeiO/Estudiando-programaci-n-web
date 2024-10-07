@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+
+p{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+ol{
+    background-color: aqua;
+}
+
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.box1{
+    width: 50%;
+    height: 800px;
+    background-image: url(https://cdn.animenewsnetwork.com/hotlink/thumbnails/fit750x750/cms/news.3/162212/kv-7.jpg);
+    background-size: cover;
+    margin: 10px;
+}

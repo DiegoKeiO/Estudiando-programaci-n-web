@@ -1,0 +1,74 @@
+body{
+    background: black;
+    font-family: sans-serif;
+    color:snow;
+    margin: 0;
+}
+
+.card{
+    background: #222;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+
+h1{
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+h2{
+    font-size: large;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+}
+
+.img1{
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    background-color: transparent;
+    background-image:url(https://www.diariosigloxxi.com/multimedia/images/img_50106c47d9d997eb9c6cc2e5c7f58dd8.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.opaco{
+    height: 100%;
+    width: 100%;
+    background-color: #000a;
+}
+
+.card_about_me{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    background-color: #222;
+}
+
+.title_am{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.img2{
+    width: 200px;
+    height: 250px;
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/55/d6/1e/55d61e51-32b3-3241-599a-b30089846acb/ANTCD-49594.jpg/1200x1200bf-60.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text_am{
+    padding: 50px;
+    text-align: justify;
+    width: auto;
+}

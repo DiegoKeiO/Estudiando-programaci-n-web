@@ -1,0 +1,39 @@
+.formulario_login{
+    background: skyblue;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border: 20px solid blue;
+    width: 500px;
+}
+
+h1{
+    text-align: center;
+    border-bottom: 5px solid rgb(1, 1, 1);
+}
+
+form{
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+label{
+    line-height: 1.5;
+    text-align: left;
+}
+
+input{
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+}
+
+.checkbox{
+    width: auto;
+}
+
+.enviar{
+    width: 50%;
+}
