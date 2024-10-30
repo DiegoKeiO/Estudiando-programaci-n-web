@@ -1,35 +1,37 @@
-let N1, N2
+function operar(operacion) {
+    // Obtener los valores de los inputs
+    let N1 = parseFloat(document.getElementById('num1').value);
+    let N2 = parseFloat(document.getElementById('num2').value);
+    let resultado;
 
-const sumar = (num1, num2)=>{
-    return parseInt(num1 + num2);
-}
+    // Verificar que los valores no sean NaN
+    if (isNaN(N1) || isNaN(N2)) {
+        document.getElementById('resultado').innerText = "Error: Ingrese números válidos";
+        return;
+    }
 
-const restar = (num1, num2)=>{
-    return parseInt(num1 - num2);
-}
+    // Realizar la operación
+    switch (operacion) {
+        case '+':
+            resultado = N1 + N2;
+            break;
+        case '-':
+            resultado = N1 - N2;
+            break;
+        case '*':
+            resultado = N1 * N2;
+            break;
+        case '/':
+            if (N2 === 0) {
+                resultado = "Error: División por 0";
+            } else {
+                resultado = N1 / N2;
+            }
+            break;
+        default:
+            resultado = "Operación no válida";
+    }
 
-const multiplicar = (num1, num2)=>{
-    return parseInt(num1 * num2);
+    // Mostrar el resultado
+    document.getElementById('resultado').innerText = resultado;
 }
-
-const dividir = (num1, num2)=>{
-    return parseInt(num1 / num2);
-}
-
-if(button = "+"){
-    resultado = sumar(N1, N2);
-}
-else if(button = "-"){
-    resultado = restar(N1, N2);
-}
-else if(button = "*"){
-    resultado = multiplicar(N1, N2);
-}
-else if(button = "/"){
-    resultado = dividir(N1, N2);
-}
-else{
-    document.write("ERROR!")
-}
-
-document.write(resultado);
