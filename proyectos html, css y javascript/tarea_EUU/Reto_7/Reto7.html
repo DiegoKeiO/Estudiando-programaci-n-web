@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 7</title>
+</head>
+<body>
+    <h2>Sumar dos números</h2>
+    <button onclick="sumar()">Sumar</button><br>
+    <br>
+    <h2>Verificar si un número es par o impar</h2>
+    <button onclick="verificar()">Verificar</button><br>
+    <br>
+    <h2>Contar las vocales en una cadena</h2>
+    <button onclick="contar()">Contar</button><br>
+    <br>
+    <h2>Convertir una cadena a mayúsculas</h2>
+    <button onclick="convertir()">Convertir</button><br>
+    <br>
+    <h2>Concatenar dos cadenas</h2>
+    <button onclick="concatenar()">Concatenar</button><br>
+    <br>
+    <h2>Calcular el área de un rectángulo</h2>
+    <button onclick="calcularArea()">Calcular</button><br>
+    <br>
+    <h2>Mostrar el número mayor de dos valores</h2>
+    <button onclick="mostrarMayor()">Mostrar</button><br>
+    <br>
+    <h2>Revertir una cadena</h2>
+    <button onclick="revertir()">Revertir</button><br>
+    <br>
+    <h2>Contar los elementos de un arreglo</h2>
+    <button onclick="contarElementos()">Contar</button><br>
+    <br>
+    <h2>Comprobar si un número está dentro de un rango</h2>
+    <button onclick="comprobarRango()">Comprobar</button><br>
+    <br>
+    <script>
+        function sumar(){
+            let num1 = 15;
+            let num2 = 12;
+            let resultado = num1 + num2;
+            alert("La suma de los dos números es: " + resultado);
+        }
+
+        function verificar(){
+            let num = prompt("Digite un número para verificar si es par o impar");
+            if(num % 2 == 0){
+                alert("El número " + num + " es par");
+            }
+            else{
+                alert("El número " + num + " es impar");
+            }
+        }
+
+        function contar(){
+            let cadena = prompt("Digite una cadena para contar las vocales");
+            let vocales = 0;
+            if (cadena && cadena.trim() !== "") {
+                for(let i = 0; i < cadena.length; i++){
+                    if(cadena[i] == 'a' || cadena[i] == 'e' || cadena[i] == 'i' || cadena[i] == 'o' || cadena[i] == 'u'){
+                        vocales++;
+                    }
+                }
+                alert("La cadena " + cadena + " tiene " + vocales + " vocales");
+            }
+            else{
+                alert("Por favor, ingrese una cadena válida");
+            }
+        }
+
+        function convertir(){
+            let cadena = prompt("Digite una cadena para convertir a mayúsculas");
+            if (cadena && cadena.trim() !== "") {
+                alert("La cadena " + cadena + " en mayúsculas es: " + cadena.toUpperCase());
+            }
+            else{
+                alert("Por favor, ingrese una cadena válida");
+            }
+        }
+
+        function concatenar(){
+            let cadena1 = prompt("Digite la primera cadena");
+            let cadena2 = prompt("Digite la segunda cadena");
+            if (cadena1 && cadena1.trim() !== "" && cadena2 && cadena2.trim() !== "") {
+                alert("La concatenación de las dos cadenas es: " + cadena1 + " " + cadena2);
+            }
+            else{
+                alert("Por favor, ingrese cadenas válidas");
+            }
+        }
+
+        function calcularArea(){
+            let base = prompt("Digite la base del rectángulo");
+            let altura = prompt("Digite la altura del rectángulo");
+            if (base && base.trim() !== "" && altura && altura.trim() !== "") {
+                let area = base * altura;
+                alert("El área del rectángulo es: " + area);
+            }
+            else{
+                alert("Por favor, ingrese valores válidos");
+            }
+        }
+
+        function mostrarMayor(){
+            let num1 = prompt("Digite el primer número");
+            let num2 = prompt("Digite el segundo número");
+            if (num1 && num1.trim() !== "" && num2 && num2.trim() !== "") {
+                alert("El número mayor es: " + Math.max(num1, num2));
+            }
+            else{
+                alert("Por favor, ingrese valores válidos");
+            }
+        }
+
+        function revertir(){
+            let cadena = prompt("Digite una cadena para revertir");
+            if (cadena && cadena.trim() !== "") {
+                alert("La cadena revertida es: " + cadena.split("").reverse().join(""));
+            }
+            else{
+                alert("Por favor, ingrese una cadena válida");
+            }
+        }
+
+        function contarElementos(){
+            let arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            alert("El arreglo tiene " + arreglo.length + " elementos");
+        }
+
+        function comprobarRango(){
+            let num = prompt("Digite un número para comprobar si está dentro del rango de 1 a 10");
+            if (num && num.trim() !== "") {
+                if(num >= 1 && num <= 10){
+                    alert("El número " + num + " está dentro del rango de 1 a 10");
+                }
+                else{
+                    alert("El número " + num + " no está dentro del rango de 1 a 10");
+                }
+            }
+            else{
+                alert("Por favor, ingrese un número válido");
+            }
+        }
+    </script>
+</body>
+</html>

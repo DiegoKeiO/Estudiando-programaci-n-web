@@ -1,0 +1,34 @@
+
+.root{
+    --pading-container: 100px 0;
+    --color-title: #001a49;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--pading-container);
+}
+
+.header{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(https://www.diariosigloxxi.com/multimedia/images/img_50106c47d9d997eb9c6cc2e5c7f58dd8.jpg);
+    background-size: cover;
+    z-index: -1;
+}

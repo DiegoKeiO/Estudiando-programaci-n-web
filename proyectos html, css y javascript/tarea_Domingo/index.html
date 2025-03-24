@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>UX_GrupoIII - Tienda Online</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #004d99;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #0066cc;
+      padding: 10px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .content {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    /* Banner ocupa todo el ancho */
+    .banner img {
+      width: 20%;
+      height: auto;
+      object-fit: cover;
+    }
+    /* Estilos para la imagen global */
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    /* Estilos para la tabla de productos */
+    .product-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    .product-table th, .product-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    .product-table th {
+      background-color: #004d99;
+      color: #fff;
+    }
+    /* Estilos para la lista de categorías */
+    .categories ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    /* Estilos para la galería */
+    .galeria-lista {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+    }
+    .galeria-lista li img {
+      border: 2px solid #ddd;
+    }
+    footer {
+      background-color: #004d99;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>UX_GrupoIII</h1>
+    <p>Bienvenido a nuestra tienda online</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <!-- Sección Inicio con banner -->
+    <section id="inicio" class="banner">
+      <img src="UNMSM.png" alt="Banner principal de la tienda">
+    </section>
+    <!-- Sección Productos -->
+    <section id="productos">
+      <h2>Productos Destacados</h2>
+      <table class="product-table">
+        <tr>
+          <th>Producto</th>
+          <th>Imagen</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+        </tr>
+        <tr>
+          <td>Smartphone X</td>
+          <td><img src="producto3.jpg" alt="Smartphone X"></td>
+          <td>Smartphone X con pantalla de 6.5", cámara de 48MP y batería de 4000mAh, ideal para multitareas y entretenimiento.</td>
+          <td>$299.99</td>
+        </tr>
+        <tr>
+          <td>Camisa Elegance</td>
+          <td><img src="producto2.jpg" alt="Camisa Elegance"></td>
+          <td>Camisa Elegance de algodón, con un corte moderno y elegante, perfecta para eventos casuales o formales.</td>
+          <td>$49.99</td>
+        </tr>
+        <tr>
+          <td>Laptop Pro 15</td>
+          <td><img src="producto1.jpg" alt="Laptop Pro 15"></td>
+          <td>Laptop Pro 15 con procesador Intel i7, 16GB de RAM y SSD de 512GB, optimizada para productividad y entretenimiento.</td>
+          <td>$899.99</td>
+        </tr>
+      </table>
+      <div class="categories">
+        <h3>Categorías</h3>
+        <ul>
+          <li>Electrónica</li>
+          <li>Ropa</li>
+          <li>Hogar</li>
+          <li>Juguetes</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <img src="nosotros.jpg" alt="Imagen sobre nosotros">
+      <p>En UX_GrupoIII nos dedicamos a ofrecer productos de calidad a precios accesibles. Nuestra misión es garantizar una experiencia de usuario inigualable y un servicio excepcional para cada cliente.</p>
+    </section>
+    <!-- Sección Galería -->
+    <section id="galeria">
+      <h2>Galería</h2>
+      <ul class="galeria-lista">
+        <li><img src="galeria1.jpg" alt="Galería Imagen 1"></li>
+        <li><img src="galeria2.jpg" alt="Galería Imagen 2"></li>
+        <li><img src="galeria3.jpg" alt="Galería Imagen 3"></li>
+      </ul>
+    </section>
+    <!-- Sección Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <img src="contacto.jpg" alt="Imagen de contacto">
+      <p>Para más información, contáctanos al correo <a href="mailto:info@ux_grupoiii.com">info@ux_grupoiii.com</a> o llama al (123) 456-7890.</p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 UX_GrupoIII. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
